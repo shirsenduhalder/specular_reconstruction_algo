@@ -1,1 +1,1 @@
-## Repo for MSR thesis on Specular Reconstruction of anisotropic objects.
+## Literature track for MSR thesis on Specular Reconstruction of anisotropic objects.
