@@ -1,0 +1,35 @@
+Shape from specularity approaches rely on the observation of surface highlights caused by specular reflection at some surface points. Standard stereo techniques lead to errors in depth estimation.
+
+\dagg Tappen \cite{tappen2011recovering} was the first where shape from single image was recovered under unknown illumination and included simple constraints on the surface curves. 
+
+\dagg Sankaranarayanan \etal \cite{sankaranarayanan2010specular} develop a relationship between reflection correspondences (RCs) for specular reconstruction under finite motion. Any two points in one or more images of a specular surface which observe the same environmental feature are denoted as RCs. This was the first method to reconstruct mirror surfaces using sparse RCs. 
+
+\dagg Chen \etal \cite{chen2017microfacet} devise a novel analytical microfacetbased isotropic reflectance model from the ellipsoid normal distribution function. We also introduce a physically interpretable approximate of our model that is particularly serviceable for specular reflectance analysis. 
+
+\dagg Nam \etal \cite{nam2018practical} acquires SVBRDF information of 3D objects using a single camera, not limited to planar surfaces, and not requiring a commercial 3D scanner to accurately capture input geometry. Reconstruction of 3D objects takes SVBRDF information into account instead of assuming diffuse surfaces. Involves finding spatially-varying reflectance and normals and imposing photometric constraints while updating geometry.
+
+\dagg Nayar and Gupta \cite{nayar2012diffuse} show that structured light has two limitations - strong highlights for specular reflections and effects of shadows. They establish that diffusion of the patterns along axis of translation can mitigate the adverse effects of specularities and shadows.
+
+\hardware AAXA M2 Projector, Canon XSi SLR, lenticular array (Edmund Optics part number NT43-029) as diffuser. 
+
+\dagg Zheng \etal \cite{zheng2000acquiring} recover 3D models of rotating objects using continuous images.  Circular-shaped light sources that generate conic rays are used to illuminate the rotating object in such a way that highlighted stripes can be observed on most of the specular surfaces. Surface shapes can be computed from the motions of highlights in the continuous images by using either specular motion stereo or single specular trace mode.
+
+\dagg Li \etal \cite{li2018learning} recover non-Lambertian, spatially-varying BRDFs and complex geometry belonging to any arbitrary shape class, from a single RGB image captured under a combination of unknown environment illumination and
+flash lighting using a deep neural network to regress shape and reflectance. They also propose a dataset.
+
+
+\dagg Xia \etal \cite{xia2016recovering} and Dong \etal \cite{dong2014appearance} are from the same research group and estimate spatially-varying surface reflectance and geometry of \textit{rotating objects} under unknown static illumination. 
+
+\dagg Ngo \etal \cite{ngo2019reflectance} recovers the isotropic reflectance and depth map under natural illumination using a light field camera and a 360-degree camera to capture the illumination. They employ a multi-stage algorithm where depth is estimated first using plane sweeping, followed by depth and normal estimation with Lambertian and the final stage incoroporates updating depth, normal and reflectance.
+
+\hardware Lytro ILLUM camera for light field and Theta S for natural illumination. Refer for datasets used. 
+
+Godard \etal \cite{godard2015multi} build a visual hull of the object and estimate the surface normal using a probability distribution under a Bayesian framework based on correspondences between the colours reflected from the object and those in the environment. They also incorporate inter reflections into this probabilistic surface normal estimate and iteratively construct the object. 
+
+Wang \etal \cite{wang2016svbrdf} use light-field cameras and derive a spatially-varying (SV)BRDF-invariant theory for recovering 3D shape and reflectance for upto 2-lobes once shape is retrieved.
+
+ZHou \etal \cite{zhou2019non} introduce a concentric multi-spectral light field design that recovers the shape and reflectance of surfaces with arbitrary materials. The system consists fo an array of cameras arranged on concentric circles where each ring captures a specific spectrum. The Phong dichromatic reflectance model is used to estimate surface shape and reflectances.
+
+\hardware Point Grey GS3-U3-51S5MC monochrome camera, Tunable liquid crystal spectral filter (KURIOUS - WL1) 
+
+\textit{Refer if micro-geometry involved: Johnson \etal \cite{johnson2011microgeometry}. Refer Netz \etal \cite{netz2012recognition} if lambertian + specular. Refer Hui \etal or Riviere \etal \cite{hui2017reflectance, riviere2016mobile} if near-planar materials are considered.}

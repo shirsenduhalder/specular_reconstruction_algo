@@ -1,0 +1,27 @@
+Shi \etal \cite{shi2016benchmark} survey and categorize existing methods using a photometric stereo taxonomy emphasizing on non-Lambertian and uncalibrated methods. They introduce a photometric stereo dataset called \textbf{DiLiGenT} for non-Lambertian materials. This paper contains citations of some literature that handles anisotropic BRDFs. Google scholar: anisotropic brdf estimation.
+
+\dagg Wang \etal \cite{wang2008modeling} represent anisotropic reflectance using a microfacet-based BRDF which tabulates the facet's normal distribution as a function of the surface location. 
+
+\dagg Xu \etal \cite{xu2013anisotropic} present an anisotropic Spherical Gaussian (ASG) function which is much more effective and efficient in representing anisotropic spherical functions than Spherical Gaussians (SGs). ASGs are rotationally invariant and capable of representing all-frequency signals and have approximate closed-form solutions for their integral, product and convolution operators, whose errors are nearly negligible.
+
+\dagg Yan \etal \cite{yan2016position} treat specular surface as a 4D position-normal distribution and fir this distribution using millions of 4D Gaussians which leads to closed-form solutions for the BRDF. Can be used for anisotropic BRDFs.
+
+\dagg Yan \etal \cite{yan2018rendering} is a rendering based paper for rendering specular reflection. Results show both single-wavelength and spectral solutions to reflection from common everyday objects, such as brushed(exhibits anisotropy), scratched and bumpy metals.
+
+\dagg Raymond \etal \cite{raymond2016multi} is again a rendering paper tailored to the high angular and spatial frequencies exhibited by scratched materials. Their SVBRDF reproduces directional highlights/patterns. \texttt{Check cited papers for more anisotropic BRDFs}
+
+\dagg Lee \etal \cite{lee2018practical} revisit the traditional V-groove cavity microfaucet model and derive an analytical, cost-effective solution for multiple scattering in rough surfaces. Their model is made up of both real and virtual grooves, and allows us to calculate higher-order scattering in the microfacets
+in an analytical fashion. They extend our model to include nonsymmetric grooves, allowing for additional degrees of freedom on the surface geometry, improving multiple reflections at grazing angles.
+
+\dagg Heitz \etal \cite{heitz2015sggx} propose a novel microflake representation to represent isotropic and anisotropic microstructures and use it for multi-scale rendering. Might be useful in noise modelling. 
+
+\dagg Chen \etal \cite{chen2014reflectance} generalize linear light source reflectometry by modulating the intensity along the linear light source, and show that a constant and two sinusoidal lighting patterns are sufficient for estimating the local shading frame and anisotropic surface reflectance. 
+
+\dagg Guarnera \etal \cite{guarnera2016brdf} presents an overview of BRDF (Bidirectional Reflectance Distribution Function) models used to represent surface/material reflection characteristics, and describes current acquisition methods for the capture and rendering of photorealistic materials.
+
+\dagg Tunwattanapong \etal \cite{tunwattanapong2013acquiring} use spherical harmonic illumination to separate out the diffuse and specular component. They also use higher order spherical harmonics to measure albedo, refelction vector, roughness and anisotropic parameters of a specular reflection lobe. 
+
+\dagg Li \etal \cite{li2017robust} propose a variational energy minimization framework for robust recovery of shape in multiview stereo with complex, unknown
+BRDFs. This framework handles non-Lambertian effects, noise and non-differential motions without restrictive priors. They demonstrate recovering shape from light fields using the same.
+
+\dagg Gutsche \etal's \cite{gutsche2017surface} method works with multiple views and a fixed light source unlike photometric stereo.They solve a non-linear optimization problem to infer BRDF and surface normals simultaneously by exploiting densely sampled light fields. 

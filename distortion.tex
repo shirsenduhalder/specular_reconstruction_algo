@@ -1,0 +1,34 @@
+Shape from distortion are a group of methods for specular surface reconstruction that makes use of observations of known or unknown patterns that are distorted by specular reflection. These techniques usually assume perfect, mirror-like surface reflectance.
+
+\dagg Rehab \etal impose a specularity constraint by defining a matching cost function for two different camera views. The matching cost of the disparity is based on differences on normal estimates rather than intensities. Cost aggregation is performed using anisotropic diffusion of the cost function.
+
+\hardware Pair of cameras and an source which emits temporally encoded light pattern with a dense set of calibrated light sources. 
+
+\dagg Yamazaki \etal \cite{yamazaki20103d} use active binocular stereo using a projector for diffuse surfaces and a display for specular surfaces. They use a weighted combination of the matching cost functions of projector-display for glossy surfaces. Stereo matching cost function for projector is based on the minimizing the phase difference between candidate matching pixels while for the display is based on minimizing the absolute phase differences between display and the left and right camera points along epipolar lines. 
+
+\hardware 2 Nikon CCD Cameras, a projector and an Apple Cinema HD Display.
+
+\dagg Liu \etal \cite{liu2013mirror} solves the problem of reconstructing the shape of a smooth mirror-like surface when dense correspondences from a static reference target are present and prove the uniqueness of this solution. They take it a step forward by constructing surfaces with sparse correspondences by solving a non-linear optimization problem using least-squares. 
+
+\dagg Kohler \etal \cite{kohler2013full} present Orbital Camera (OrcaM), a spherical device for simultaneous acquisition of geometrical, color and reflectance properties. It contains a glass carrier for inspection of the bottom part.  The actual camera obtained by the combination of a perspective camera and refractive layers of axial type. A point cloud reconstructed with OrcaM usually consists of 200-300 million oriented points. For size efficiency, the coarse object shape is represented by a low resolution mesh while the fine details are stored in a normal map.
+
+\hardware 7 Canon EOS 500D DSLR, Sanyp PLV Z4000 (projector), 633 LEDs at an angular distance of $7.5 \degree$.
+
+\dagg Weinmann \etal \cite{weinmann2013multi} employ a turntablebased setup with several cameras and displays that are used to display illumination patterns which are reflected by the object surface. Via a non-parametric clustering of normal hypotheses derived for each point in the scene both the most likely local surface normal and a local surface consistency estimate is obtained which is used to itertively construct the surface.
+
+\hardware 11 cameras, 2 displays
+
+\dagg Rozenfeld \etal \cite{rozenfeld2010dense} recover the 3D shape of mirror like objects by capturing the reflection of stripes by a camera. The direction of the displayed stripes and their reflection in the image are related by a 1D homography matrix. They focus on sparse correspondences from which the depth and the local shape are estimated at sub-millimeter accuracy.
+
+\dagg Nguyen \etal \cite{nguyen2019single} propose a single-shot defectometry for real-time measurement of 3D surface profle using a single composite pattern by the addition of orthogonal fringe patterns. They adapt the Fourier Transform (FT) method and the spatial carrier frequency phase-shifting (SCPS) technique for accurate phase estimation. They also demonstrate measuring surface even under harsh environmental conditions (vibrations)
+in real-time.
+
+\dagg Balzer \etal \cite{balzer2014cavlectometry} use the deflectometry principle for reconstruction of complex and large specular objects. They perform deflectometry in an Atomatic Virtual Environment called CAVE from any vantage point.
+
+\hardware A cube like structure which they call CAVE. \\
+
+If required, also check:
+
+\begin{enumerate}
+	\item \dagg Han \etal \cite{han2016mirror} construct surfaces based on observing the reflections of a moving reference plane on the mirror surface.
+\end{enumerate}
